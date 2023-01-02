@@ -1,10 +1,5 @@
-import { Box } from "@mui/system"
-import { Navbar } from "../components/Navbar"
+import { Box } from "@mui/system";
 
 export const Home = () => {
-    return (
-        <Box>
-            <Navbar/>
-        </Box>
-    )
-}
+  return <Box>Teste</Box>;
+};

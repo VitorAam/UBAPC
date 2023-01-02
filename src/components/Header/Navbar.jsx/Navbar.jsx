@@ -1,6 +1,6 @@
-import { Box, Typography, useMediaQuery } from "@mui/material";
-import imagemLogo from "../assets/logoUBAPC.png";
-import { LinkText } from "./LinkText";
+import { Box, useMediaQuery } from "@mui/material";
+import imagemLogo from "../../../assets/logoUBAPC.png";
+import { LinkText } from "../../Text/LinkText";
 
 export const Navbar = () => {
   const desktop = useMediaQuery("(max-width:1024px)");
@@ -32,11 +32,11 @@ export const Navbar = () => {
           flexWrap: "wrap"
         }}
       >
-        <LinkText texto="Institucional"/>
-        <LinkText texto="Ações"/>
-        <LinkText texto="Depoimentos"/>
-        <LinkText texto="Notícias"/>
-        <LinkText texto="Contato"/>
+        <LinkText link="/institucional" texto="Institucional"/>
+        <LinkText link="/acoes" texto="Ações"/>
+        <LinkText link="/depoimentos" texto="Depoimentos"/>
+        <LinkText link="/noticias" texto="Notícias"/>
+        <LinkText link="/contato" texto="Contato"/>
       </Box>
     </Box>
   );

@@ -1,6 +1,4 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import imagemLogo from "../assets/logoUBAPC.png";
 import { LinkText } from "./LinkText";
 
@@ -31,6 +29,7 @@ export const Navbar = () => {
           justifyContent: "space-around",
           columnGap: "1.5rem",
           width: "calc(100% - 5.2rem)",
+          flexWrap: "wrap"
         }}
       >
         <LinkText texto="Institucional"/>

@@ -12,11 +12,22 @@ export const LinkText = (props) => {
     >
       <Typography
         sx={{
-          transition: "10s",
-          "&:hover": {
-            textDecoration: "underline",
-            textDecorationColor: "#777b7e",
-            textDecorationThickness: "2px",
+          display: "inline-block",
+          position:"relative",
+          "&:before": {
+            content: "''",
+            position: "absolute",
+            width: "100%",
+            transform: "scaleX(0)",
+            height: "2px",
+            bottom: 0,
+            backgroundColor:"black",
+            transformOrigin:"bottom right",
+            transition: "transform 0.25s ease-out"
+          },
+          "&:hover:before": {
+            transform: "scaleX(1)",
+            transformOrigin: "bottom left"
           },
         }}
       >

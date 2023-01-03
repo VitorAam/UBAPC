@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { Footer } from './components/Footer/Footer.jsx'
 import { Navbar } from './components/Header/Navbar.jsx/Navbar.jsx'
 import { Acoes } from './pages/Acoes.jsx'
 import { Contato } from './pages/Contato.jsx'
@@ -26,7 +27,7 @@ function App() {
         </Routes>
       </main>
       <footer>
-
+        <Footer />
       </footer>
     </div>
   )

@@ -1,4 +1,5 @@
 import { Box, useMediaQuery } from "@mui/material";
+import { Link } from "react-router-dom";
 import imagemLogo from "../../../assets/logoUBAPC.png";
 import { LinkText } from "../../Text/LinkText";
 
@@ -12,14 +13,16 @@ export const Navbar = () => {
         backgroundColor: "rgba(242, 243, 213, 0.74)",
       }}
     >
-      <Box
-        sx={{
-          backgroundImage: `url(${imagemLogo})`,
-          backgroundSize: "cover",
-          height: "4rem",
-          minWidth: "5.2rem",
-        }}
-      />
+      <Link to="/">
+        <Box
+          sx={{
+            backgroundImage: `url(${imagemLogo})`,
+            backgroundSize: "cover",
+            height: "4rem",
+            minWidth: "5.2rem",
+          }}
+        />
+      </Link>
       <Box
         pt="1.5rem"
         mr="3rem"

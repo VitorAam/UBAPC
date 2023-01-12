@@ -11,6 +11,8 @@ export const Navbar = () => {
       sx={{
         display: "flex",
         backgroundColor: "rgba(242, 243, 213, 0.74)",
+        justifyContent:"space-between",
+        boxShadow:"1px 2px #22AAA1"
       }}
     >
       <Link to="/">
@@ -19,7 +21,7 @@ export const Navbar = () => {
             backgroundImage: `url(${imagemLogo})`,
             backgroundSize: "cover",
             height: "4rem",
-            minWidth: "5.2rem",
+            width: "5.2rem",
           }}
         />
       </Link>
@@ -32,7 +34,8 @@ export const Navbar = () => {
           justifyContent: "space-around",
           columnGap: "1.5rem",
           width: "calc(100% - 5.2rem)",
-          flexWrap: "wrap"
+          flexWrap: "wrap",
+          maxWidth:"50rem"
         }}
       >
         <LinkText link="/institucional" texto="Institucional"/>

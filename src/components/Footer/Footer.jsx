@@ -10,7 +10,7 @@ export const Footer = () => {
     return (
         <Box bgcolor='rgba(242, 243, 213, 0.74)' sx={{
             height: `${desktop?'53rem':'35rem'}`,
-            borderTop:'1px inset white',
+            borderTop:'2px solid #22AAA1',
             paddingLeft: `${desktop?'1.5rem':'4.5rem'}`,
             paddingRight: `${desktop?'1.5rem':'4.5rem'}`,
             paddingTop: `${desktop?'1.5rem':'5rem'}`,

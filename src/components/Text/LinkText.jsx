@@ -21,7 +21,7 @@ export const LinkText = (props) => {
             transform: "scaleX(0)",
             height: "2px",
             bottom: 0,
-            backgroundColor:"black",
+            backgroundColor:"#22AAA1",
             transformOrigin:"bottom right",
             transition: "transform 0.25s ease-out"
           },
